@@ -8,61 +8,61 @@ import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
-    
-  const cartItems = useSelector(state => state.cart.cart)
-  return (
-    <div className='container'>
-        <div className='navbar'>
-            <nav>
-                <ul>
-                    <li><a href='/'>E-commerce</a></li>
-                    {/* <li><a href='/shop'>Shop</a></li>
+
+    const cartItems = useSelector(state => state.cart.cart)
+    return (
+        <div className='container'>
+            <div className='navbar'>
+                <nav>
+                    <ul>
+                        <li><a href='/'>E-commerce</a></li>
+                        {/* <li><a href='/shop'>Shop</a></li>
                     <li><a href='/login'>Login</a></li> */}
-                </ul>
-            </nav>
-        </div>
-<br />
-<div className='image'>
-    <img src={pic2} className='body-img' />
-</div>
-<div className='cart'>
-    <h2>Code </h2>
-   <Link to="/Checkout"><h4>Cart <small>{cartItems.length}</small></h4></Link> 
-</div>
-        <div className='body-container'>
-            <div className='wrap'>
-                <Product
-                 id = "1"
-                 image = {pic2}
-                 title = "Dress - shoes"
-                 
-                 />
+                    </ul>
+                </nav>
             </div>
             <br />
-            <div className='wrap'>
-            <Product
-            id = "2"
-                 image = {pic3}
-                 title = "Dress - T-shirts"
-                 />
-            
+            <div className='image'>
+                <img src={pic2} className='body-img' />
             </div>
-            <div className='wrap'>
-            <Product
-                 id = "3"
-                 image = {pic1}
-                 title = "This is T-shirts"
-                 />
+            <div className='cart'>
+                <h2>Code </h2>
+                <Link to="/Checkout"><h4>Cart <small>{cartItems.length}</small></h4></Link>
             </div>
-            
-        </div>
+            <div className='body-container'>
+                <div className='wrap'>
+                    <Product
+                        id="1"
+                        image={pic2}
+                        title="Dress - shoes"
 
-        <div className='Footer'>
-            @2023 all right reserved Designed by king
+                    />
+                </div>
+                <br />
+                <div className='wrap'>
+                    <Product
+                        id="2"
+                        image={pic3}
+                        title="Dress - T-shirts"
+                    />
+
+                </div>
+                <div className='wrap'>
+                    <Product
+                        id="3"
+                        image={pic1}
+                        title="This is T-shirts"
+                    />
+                </div>
+
+            </div>
+
+            <div className='Footer'>
+                @2023 all right reserved Designed by king
+            </div>
+
         </div>
-      
-    </div>
-  )
+    )
 }
 
 export default Home

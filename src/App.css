@@ -44,7 +44,7 @@ nav ul li a{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 90px; 
+  column-gap: 190px; 
 }
 
 .body-img{
@@ -67,8 +67,29 @@ nav ul li a{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  column-gap: 20px;
+}
+.wrap-c .imagee{
+  width:40vw;
+  height:10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 20px;
+}
+.wrap-c .btnn{
+  width:40vw;
+  height:10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 20px;
 }
+.img-c{
+  width:20vw;
+  height:30vh;
+}
+
 
 .Footer{
   background-color: rgb(38, 133, 156);

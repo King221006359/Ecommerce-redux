@@ -26,15 +26,25 @@ export function Checkout() {
                             
                                 <div className='body-container-c'>
                                     <div className='wrap-c'>
-
-                                        <img src={item.image} className='img' /><br />
+                                        <div className="imagee">
+                                        <img src={item.image} className='img-c' />
+                                        </div><br />
+                                        <div className="btnn">
                                         <h3>{item.title}</h3><br />
                                         <button className="btn"
                                         onClick={() => dispatch(removefromCart({id :item.id}))}
                                         >Remove</button>
+                                        </div>
                                     </div>
 
                                 </div>
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+                                <br />
+
                             </>
                         )
                     })
