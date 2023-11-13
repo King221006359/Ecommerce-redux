@@ -1,0 +1,20 @@
+// import React from 'react'
+import '../App.css'
+import { useDispatch } from 'react-redux'
+import { addtocart } from './cartSlice'
+function product ({image}) {
+  const dispatch = useDispatch()
+  return (
+    <>
+    <div className='body-container'>
+    <div className='wrap'>
+    <img src= {image} className='img' /> 
+    <br />
+    <button className="btn" onClick={() => dispatch(addtocart({image}))}>Add to cart</button>
+    </div>
+    </div>
+    </>
+  )
+}
+
+export default product

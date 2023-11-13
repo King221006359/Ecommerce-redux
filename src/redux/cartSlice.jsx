@@ -6,9 +6,12 @@ const cartSlice = createSlice({
             cart: []
         },
         reducers: {
+            addtocart: (state, action) =>{
+                state.cart.push(action.payload)
+            }
 
         }
 })
 
-export default cartSlice;
-export const {} cartSlice.actions;
+export default cartSlice.reducer;
+export const {addtocart} = cartSlice.actions;

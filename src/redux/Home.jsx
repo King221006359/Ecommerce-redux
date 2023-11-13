@@ -1,9 +1,13 @@
-import React from 'react'
+// import React from 'react'
 
 import pic12 from '../assets/pic9.jpg'
 import pic1 from '../assets/pic16.jpg'
 import pic2 from '../assets/pic17.jpg'
+import Product from './Product'
+import { useSelector } from 'react-redux'
 const Home = () => {
+    
+  const cartItems = useSelector(state => state.cart.cart)
   return (
     <div className='container'>
         <div className='navbar'>
@@ -16,18 +20,26 @@ const Home = () => {
             </nav>
         </div>
 <br />
+<div className='cart'>
+    <h2>Code </h2>
+    <h4>Cart <small>{cartItems.length}</small></h4>
+</div>
         <div className='body-container'>
             <div className='wrap'>
-                <img src= {pic12} className='img' /><br/>
-                <h>Dress :500$</h>
+                <Product
+                 image = {pic12}
+                 />
             </div>
             <div className='wrap'>
-                <img src= {pic1} className='img' /><br/>
-                <h>Dress :500$</h>
+            <Product
+                 image = {pic1}
+                 />
+            
             </div>
             <div className='wrap'>
-                <img src= {pic2} className='img' /><br/>
-                <h>Dress :500$</h>
+            <Product
+                 image = {pic2}
+                 />
             </div>
         </div>
 

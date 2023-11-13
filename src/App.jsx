@@ -4,16 +4,17 @@
 // import indexRedux from './components/indexRedux'
 import Home from './redux/Home'
 import './App.css'
-
+import { Provider } from 'react-redux'
+import store from './redux/store' 
 function App() {
 
   return (
-    <>
-     {/* <Testcount /> */}
-     {/* <LoginRedux/> */}
-     {/* <indexRedux /> */}
+  
+    <Provider store={store}>
     <Home />
-    </>
+    </Provider>
+    
+
   )
 }
 

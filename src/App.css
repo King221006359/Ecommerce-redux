@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: row;
   width:80vw;
-  background-color: rgb(109, 133, 53);
+  background-color: chocolate;
   color:white;
   justify-content: center;
   text-decoration: none;
@@ -49,14 +49,19 @@ nav ul li a{
 }
 
 .Footer{
-  background-color: rgb(109, 133, 53);
+  background-color: chocolate;
   bottom: 0;
-  margin-top: 40%;
+  margin-top: 44%;
   height:10vh;
   color:white;
 }
 
-
+.btn{
+  background-color: chocolate;
+  color:white;
+  width:15vw;
+  height:10vh;
+}
 
 
 #root {
