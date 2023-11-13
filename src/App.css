@@ -13,6 +13,7 @@
   color:white;
   justify-content: center;
   text-decoration: none;
+  margin-top:-8%;
   
 
 }
@@ -36,7 +37,7 @@ nav ul li a{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  column-gap: 90px; 
+  column-gap: 70px; 
 }
 .body-container-c{
   display: flex;
@@ -45,6 +46,10 @@ nav ul li a{
   column-gap: 90px; 
 }
 
+.body-img{
+  width:80vw;
+  height:40vh;
+}
 
 .wrap{
   width:20vw;
