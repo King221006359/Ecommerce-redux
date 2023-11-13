@@ -6,12 +6,23 @@ import Home from './redux/Home'
 import './App.css'
 import { Provider } from 'react-redux'
 import store from './redux/store' 
+// import { BrouserRouter,Routes,Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from
+ 
+'react-router-dom';
+import Checkout from './redux/Checkout';
 function App() {
 
   return (
   
     <Provider store={store}>
-    <Home />
+   
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/" element={<Checkout />}></Route>
+    </Routes>
+    </BrowserRouter>
     </Provider>
     
 
