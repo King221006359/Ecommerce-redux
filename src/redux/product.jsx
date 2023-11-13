@@ -2,7 +2,7 @@
 import '../App.css'
 import { useDispatch } from 'react-redux'
 import { addtocart } from './cartSlice'
-function product ({image,title}) {
+function product ({id,image,title}) {
   const dispatch = useDispatch()
   return (
     <>
@@ -11,7 +11,7 @@ function product ({image,title}) {
     <img src= {image} className='img' /> 
     <h3>{title}</h3>
     <br />
-    <button className="btn" onClick={() => dispatch(addtocart({image}))}>Add to cart</button>
+    <button className="btn" onClick={() => dispatch(addtocart({id,image,title}))}>Add to cart</button>
     </div>
     </div>
     </>

@@ -29,13 +29,16 @@ const Home = () => {
         <div className='body-container'>
             <div className='wrap'>
                 <Product
+                 id = "1"
                  image = {pic1}
                  title = "This is T-shirts"
                  
                  />
             </div>
+            <br />
             <div className='wrap'>
             <Product
+            id = "2"
                  image = {pic1}
                  title = "This is T-shirts"
                  />
@@ -43,6 +46,7 @@ const Home = () => {
             </div>
             <div className='wrap'>
             <Product
+                 id = "3"
                  image = {pic1}
                  title = "This is T-shirts"
                  />

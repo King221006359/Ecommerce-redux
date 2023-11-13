@@ -38,6 +38,12 @@ nav ul li a{
   justify-content: center;
   column-gap: 90px; 
 }
+.body-container-c{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 90px; 
+}
 
 
 .wrap{
@@ -46,6 +52,15 @@ nav ul li a{
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.wrap-c{
+  width:40vw;
+  height:10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
 }
 
 .Footer{
