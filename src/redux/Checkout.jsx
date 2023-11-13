@@ -31,7 +31,7 @@ export function Checkout() {
                                         </div><br />
                                         <div className="btnn">
                                         <h3>{item.title}</h3><br />
-                                        <button className="btn"
+                                        <button className="btn1"
                                         onClick={() => dispatch(removefromCart({id :item.id}))}
                                         >Remove</button>
                                         </div>
@@ -49,7 +49,7 @@ export function Checkout() {
                         )
                     })
                 }
-<div className='Footer'>
+<div className='Footer1'>
             @2023 all right reserved Designed by king
         </div>
             </div>

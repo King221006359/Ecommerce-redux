@@ -2,7 +2,9 @@
 
 import pic3 from '../assets/pic18.jpg'
 import pic1 from '../assets/pic16.jpg'
-import pic2 from '../assets/picee.jpg'
+import pic2 from '../assets/pic4.jpg'
+import pic4 from '../assets/picee.jpg'
+
 import Product from './Product'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -15,7 +17,7 @@ const Home = () => {
             <div className='navbar'>
                 <nav>
                     <ul>
-                        <li><a href='/'>E-commerce</a></li>
+                        <li><a href='/'><strong>E-<i>commerce</i></strong></a></li>
                         {/* <li><a href='/shop'>Shop</a></li>
                     <li><a href='/login'>Login</a></li> */}
                     </ul>
@@ -23,7 +25,7 @@ const Home = () => {
             </div>
             <br />
             <div className='image'>
-                <img src={pic2} className='body-img' />
+                <img src={pic4} className='body-img' />
             </div>
             <div className='cart'>
                 <h2>Code </h2>
