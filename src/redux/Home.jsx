@@ -2,7 +2,7 @@
 
 import pic3 from '../assets/pic18.jpg'
 import pic1 from '../assets/pic16.jpg'
-import pic2 from '../assets/pic4.jpg'
+import pic2 from '../assets/picee.jpg'
 import Product from './Product'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
@@ -54,6 +54,7 @@ const Home = () => {
                  title = "This is T-shirts"
                  />
             </div>
+            
         </div>
 
         <div className='Footer'>
