@@ -9,12 +9,13 @@
   display: flex;
   flex-direction: row;
   width:70vw;
-  background-color: rgba(27, 109, 129, 0.726);
-  color:white;
+  /* background-color: rgba(35, 133, 224, 0.651); */
+  color:rgba(35, 133, 224, 0.651);
   justify-content: center;
   text-decoration: none;
   margin-top:-8%;
-  border-left: 132px solid rgba(210, 198, 30, 0.397);
+  border-left: 132px solid white;
+  border-bottom: 22px solid rgba(35, 133, 224, 0.651);
   
 
 }
@@ -24,13 +25,14 @@ nav{
 }
 nav ul {
   list-style: none;
-  color:white;
+  color:black;
 
 }
 nav ul li a{
   text-decoration: none;
-  color:white;
+  color:rgba(35, 133, 224, 0.651);
   font-size:30px;
+  
   
 }
 
@@ -49,8 +51,8 @@ nav ul li a{
 
 .body-img{
   width:80vw;
-  height:50vh;
-  opacity: 70%;
+  height:65vh;
+  opacity: 90%;
 }
 
 .wrap{
@@ -97,10 +99,29 @@ nav ul li a{
   margin-top: 44%;
   height:10vh;
   color:white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Footer1{
+  background-color: rgb(38, 133, 156);
+  bottom: 0;
+  margin-top: 10%;
+  height:10vh;
+  color:white;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .btn{
   background-color: rgb(38, 133, 156);
+  color:white;
+  width:15vw;
+  height:10vh;
+}
+.btn1{
+  background-color:red;
   color:white;
   width:15vw;
   height:10vh;
@@ -148,4 +169,30 @@ nav ul li a{
 
 .read-the-docs {
   color: #888;
+}
+
+
+@media screen and (max-width :540px){
+  .body-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px; 
+  }
+  .Footer{
+    margin-top:70%;
+  }
+  .btn{
+    height:20vh;
+  }
+  .btn1{
+    width:40vw;
+    background-color: red;
+    color:white;
+  }
+  .navbar nav {
+    /* display:block; */
+    text-align: left;
+    width:53vw;
+  }
 }
